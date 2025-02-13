@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<link rel="stylesheet" href="css/style.css">
+		<title>Space</title>
+	</head>
+	<body>
+		<div class="wrapper">
+			<main class="page">
+				<section class="page__hero hero">
+					<div class="hero__container">
+						<div class="hero__header">
+							<nav class="hero__menu menu">
+								<ul class="menu__list">
+									<li class="menu__item">
+										<a href="#" class="menu__link">Головна</a>
+									</li>
+									<li class="menu__item">
+										<a href="#secont" class="menu__link">Про місію</a>
+									</li>
+									<li class="menu__item">
+										<a href="#tree" class="menu__link">Таблиця порівняннь</a>
+									</li>
+									<li class="menu__item">
+										<a href="#four" class="menu__link">Залишити відгук</a>
+									</li>
+								</ul>
+							</nav>
+						</div>
+						<div class="hero__content">
+							<h1 class="hero__title">Дослідження Космосу</h1>
+							<div class="hero__label">Майбутнє людства серед зірок</div>
+						</div>
+					</div>
+					<img src="img/beckground.webp" class="hero__image" alt="Image">
+				</section>
+				<section class="page__about about">
+					<div class="about__container">
+						<div class="about__header header-block" id="item">
+							<h2 class="header-block__title" id="about_t1">Наша місія</h2>
+						</div>
+						<div class="about__content" >
+							<div class="about__text" >
+								<p>
+									Наш проєкт — це унікальне дослідження, що порівнює умови росту рослин на Землі та в космосі. Ми створили спеціальну приставку-моніторинг, яка відстежує ключові параметри вазона: температуру, вологість, рівень освітлення, склад ґрунту та інші фактори.
+									Цю систему ми можемо встановити на Землі та отримувати реальні дані про ріст і розвиток рослини в стандартних умовах. Проте у космосі ми не можемо безпосередньо впливати на вазон, тому порівняння будується на теоретичних моделях та даних із відкритих космічних експериментів.
+									Таким чином, наша мета — зрозуміти, як різні середовища впливають на життя рослин. Ми хочемо не просто порівняти цифри — ми відкриваємо вікно у майбутнє, де людина і природа можуть співіснувати за межами Землі.								</p>
+							</div>
+							<a href="#about_t2" class="about__button button">Дізнатися більше</a>
+						</div>
+					</div>
+				</section>
+				<section class="page__amenities amenities">
+					<div class="amenities__container">
+						<div class="amenities__header header-block">
+							<h2 class="header-block__title" id="about_t2">Галерея</h2>
+							<div class="header-block__text">
+								<p>та коротка інформація <br>при натисненні детальніша інформація</p>
+							</div>
+						</div>
+						<div class="amenities__sections">
+							<div class="amenities__section section-amenities">
+								<div class="section-amenities__items">
+									<article class="section-amenities__item" onclick="showInfo('block1')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label lable-1">на землі</h4>
+											<img src="img/earth.jpg" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+									<article class="section-amenities__item" onclick="showInfo('block2')">
+										<a class="section-amenities__link">
+											<h4 class="section-amenities__label">в космосі</h4>
+											<img src="img/space.jpg" class="section-amenities__image" alt="Image">
+										</a>
+									</article>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+				<section class="forms__container">
+					<form id="myForm">
+						<h4 class="form4" id="form_q">Залишити питання</h4>
+						<input class="form_1__forms"  type="text" name="name" placeholder="Ваше ім'я">
+						<input class="form_2__forms" type="email" name="email" placeholder="Ваш email">
+						<textarea class="form_a__forms"name="message" placeholder="Ваше повідомлення"></textarea>
+						<button class="form_s"type="submit">Відправити</button>
+						<a href="https://t.me/+SOUdb1iutAw3OTYy" class="about__button button" id="button2">Посилання на групу</a>
+					</form>
+				</section>
+			</main>
+			<footer class="footer">
+				<div class="footer__container">
+					<div class="footer__social social">
+						<!-- <a href="https://www.facebook.com/share/miGcPHnoNqb8HUQX/?mibextid=LQQJ4d" target="_blank" class="social__item">
+							<img src="img/social/01.svg" alt="Image">
+						</a>
+						<a href="" target="_blank" class="social__item">
+							<img src="img/social/03.svg" alt="Image">
+						</a> -->
+					</div>
+					<div class="footer__copy" id="rrr">
+						<p>Науковий ліцей © 2024</p>
+					</div>
+				</div>
+			</footer>
+			<div id="overlay" class="overlay" onclick="hideOverlay()">
+				<div class="overtwo">
+					<img id="overlayImage" src="" alt="Overlay Image">
+					<div class="overfour">
+						<p id="info-name"></p>
+						<p id="info-content" class="info-content"></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="scripts.js"></script>
+	</body>
+</html>
